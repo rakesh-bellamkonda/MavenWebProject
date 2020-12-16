@@ -18,4 +18,3 @@ artifacts:
   files:
     - target/**/*
     - .ebextensions/**/*
-  base-directory: 'target'
