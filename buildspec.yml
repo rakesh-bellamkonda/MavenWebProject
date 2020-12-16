@@ -11,12 +11,11 @@ phases:
     commands:
       - echo Entered Build phase
       - mvn package
-      - mv target/MavenWebProject.war MavenWebProject.war
   post_build:
     commands:
       - echo Build completed
 artifacts:
   files:
-    - MavenWebProject.war
+    - target/**/*
     - .ebextensions/**/*
   base-directory: 'target'
