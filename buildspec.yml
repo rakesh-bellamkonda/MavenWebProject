@@ -14,6 +14,8 @@ phases:
   post_build:
     commands:
       - echo Build completed
+      - ls -alrt
+      - chmod 777 *
 artifacts:
   files:
     - target/MavenWebProject.war
