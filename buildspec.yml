@@ -10,10 +10,11 @@ phases:
   build:
     commands:
       - echo Entered Build phase
-      - mvn install
+      - mvn package
+      - mvn mv target/MavenWebProject.war MavenWebProject.war
   post_build:
     commands:
       - echo Build completed
 artifacts:
   files:
-    - target/**/*
+    - MavenWebProject.war
