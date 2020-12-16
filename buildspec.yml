@@ -16,5 +16,5 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/**/*
+    - target/MavenWebProject.war
     - .ebextensions/**/*
