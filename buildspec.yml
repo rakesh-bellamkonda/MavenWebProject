@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Entered Build phase
       - mvn package
-      - mvn mv target/MavenWebProject.war MavenWebProject.war
+      - mv target/MavenWebProject.war MavenWebProject.war
   post_build:
     commands:
       - echo Build completed
