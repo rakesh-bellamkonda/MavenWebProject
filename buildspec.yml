@@ -16,4 +16,4 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/MavenWebProject.war
+    - target/MavenWebProject-0.0.1-SNAPSHOT.war
