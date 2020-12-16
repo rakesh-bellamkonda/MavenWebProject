@@ -13,4 +13,5 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/MavenWebProject.war
+    - target/**/*
+  discard-paths: yes
