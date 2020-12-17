@@ -1,9 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
   pre_build:
     commands:
       - echo Entered pre-build state
@@ -11,11 +8,10 @@ phases:
     commands:
       - echo Entered Build phase
       - mvn package
-      - mv target/MavenWebProject.war MavenWebProject.war
   post_build:
     commands:
       - echo Build completed
 artifacts:
   files:
-    - MavenWebProject.war
-    - .ebextensions/**/*
+    - target/**/*
+  discard-paths: yes
