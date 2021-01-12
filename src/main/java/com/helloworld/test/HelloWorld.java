@@ -11,6 +11,6 @@ package com.helloworld.test;
 	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     resp.setContentType("text/plain");
-    resp.getWriter().write("SP Coding Test : Hello World");
+    resp.getWriter().write("Hello World CAT!!");
     }
  }
